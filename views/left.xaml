@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Animation.views.left"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Animation.views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="412.534"
+             Name="lWin" Loaded="lWin_Loaded">
+    <Grid Name="leftGrid" Margin="0,0,0,-107" >
+        <StackPanel Name="LeftArrow" HorizontalAlignment="Left"  Height="101" Margin="234,169,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.523,0.498">
+            <StackPanel.Background>
+                <SolidColorBrush Color="White"/>
+            </StackPanel.Background>
+            <Image x:Name="ImageViewer1" Source="{Binding DisplayedArrow}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

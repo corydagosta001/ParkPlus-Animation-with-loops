@@ -1,0 +1,27 @@
+﻿<Window x:Class="Animation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animation"
+        xmlns:ViewModel="clr-namespace:Animation.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="659.673" Width="412.534">
+    <Window.DataContext>
+        <ViewModel:ViewModelController/>
+    </Window.DataContext>
+    <Window.Icon>
+        <DrawingImage />
+    </Window.Icon>
+
+    <Grid Margin="0,140,0,0">
+
+        <StackPanel Margin="0,-138,0,0">
+            <Image Name="LogoViewer1" Source="{Binding DisplayedLogo}" Height="84" Width="400" Margin="8,0,7,0" />
+        </StackPanel>
+        <ContentControl Content="{Binding CurrentView}" Margin="0,0,0,226"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Background="White" Foreground="Blue" FontSize="30" Height="63" 
+                 Margin="32,394,0,0" TextWrapping="Wrap" Text="{Binding UserInstructions}" VerticalAlignment="Top" Width="344" />
+    </Grid>
+
+</Window>

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Animation.views.StartAgain"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Animation.views"
+             xmlns:ViewModel="clr-namespace:Animation.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" Width="407.921">
+    <Grid HorizontalAlignment="Left" Width="415">
+        <TextBlock HorizontalAlignment="Left" Margin="83,146,0,0" TextWrapping="Wrap" Background="White" Foreground="Blue"
+                   TextAlignment="Center" FontSize="30" Text="End Of Demo" VerticalAlignment="Top" Width="264" Height="38"/>
+        <!--
+        <Button Content="Start Again" Command="{Binding PlayAnimationLoopAgain}" HorizontalAlignment="Left" Margin="130,194,0,0" VerticalAlignment="Top" Width="145" Height="29" RenderTransformOrigin="0.502,-4.467"/>
+        -->
+    </Grid>
+</UserControl>
